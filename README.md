@@ -8,3 +8,8 @@ YOU are Nigel Tufnel, lead guitarist of the world-famous rock band Spinal Tap, t
 The time has come for tonight's show to start; the crowd is getting restless, as the incessant chanting of "TAP! TAP! TAP!" filters its way through the theater's labyrinthine backstage. "Well, we've kept them waiting long enough - let's do it to 'em", says Derek, the bassist. Your instruments are tuned, the miniature sandwiches have been eaten, and the stage is set - but, wait, where is the stage again? 
 
 As Nigel, you must lead your band through the backstage maze of the Xanadu Star Theater and onto the stage. There will be amps that go to 11, tiny stonehenge monuments, and a host of replacement drummers to help you along the way. Can you find the stage door before the crowd gets bored and leaves? 
+
+TODO: 
+- Implement text parser to allow players to enter arbitrary commands (e.g., not just a series of commands from a list) 
+- Store room descriptions, etc. in .txt files - remove hard-coded "flavor text"
+
