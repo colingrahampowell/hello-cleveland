@@ -1,4 +1,5 @@
-"HELLO CLEVELAND!" : A text-based adventure inspired by the classic 1984 film "This Is Spinal Tap".
+HELLO CLEVELAND!
+A text-based adventure inspired by the classic 1984 film "This Is Spinal Tap".
 
 The time: 1982. The place: The Xanadu Star Theater, Cleveland, Ohio. 
 
