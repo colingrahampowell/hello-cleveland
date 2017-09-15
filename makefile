@@ -1,6 +1,6 @@
 ##########################################################
 ## File: makefile
-## Description: Makefile for CS162, Lab D. Based on 
+## Description: Makefile for "Hello, Cleveland!" game.
 ## “Robust Makefile” provided with course material. 
 ##########################################################
 
@@ -50,17 +50,8 @@ HEADER12 = Lift.hpp
 HEADERS = ${HEADER1} ${HEADER2} ${HEADER3} ${HEADER4} ${HEADER5} ${HEADER6} ${HEADER7} ${HEADER8} ${HEADER9} ${HEADER10} ${HEADER11} ${HEADER12} 
 
 #executable files
-PROG1 = powell_final
-PROG2 = test_debug
-PROG3 = test_HeroItem
-PROGS = ${PROG1} ${PROG2} ${PROG3}
-
-#reflections document
-DOC1 = Powell_Reflections.pdf
-DOCS = ${DOC1}
-
-#name of compressed file
-ZIP = powell_final.zip
+PROG1 = hello_cleveland 
+PROGS = ${PROG1} 
 
 #####################
 ### BUILD SECTION ###
@@ -69,15 +60,6 @@ ZIP = powell_final.zip
 all: 
 	${CXX} ${CXXFLAGS} ${SRCS_BASE} -o ${PROG1}
 
-debug:
-	${CXX} ${CXXFLAGS} -g ${SRCS_BASE} -o ${PROG2}
-
-testHero: 
-	${CXX} ${CXXFLAGS} ${SRCS_TEST1} -o ${PROG3} 
-
-#zips all Lab files into a single compressed file
-zip: 
-	zip ${ZIP} ${SRCS_ALL} ${HEADERS} ${DOCS} makefile
 
 #removes all executable files, debug folders
 clean:
