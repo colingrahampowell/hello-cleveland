@@ -1,0 +1,32 @@
+file io notes:
+
+variances in:
+	1. room description: pre/post special action
+	2. special action: stages / conditions
+
+approach:
+	1. use hash-map --> room_desc[ "pre" ] = x, etc. --> hard to generalize, however 
+	2. use array (indices indicate stage) --> index into next 'stage'
+
+file format idea:
+	1. 	ROOM_DESC: x
+		ROOM_DESC: y
+		ROOM_DESC: z
+		SPECIAL: a 
+		SPECIAL: b
+		SPECIAL: c
+		START_ITEM: (item desc)
+		etc.
+	  	
+		pseudocode:
+		if( room_desc ):
+			read desc, add to room_desc vector;
+		else if (special)
+			read desc, add to special vector;
+		etc.
+
+		we can consider indices as 'states'; advance from one state to the next by 
+		taking actions.
+			- probably want an 'advance state' function
+
+
