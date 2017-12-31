@@ -23,7 +23,7 @@ class Lift : public Room
 		virtual std::string specialAction();
 
 	public:
-		Lift(std::string);
+		Lift(std::string, std::string);
 		virtual bool interact();
 };
 

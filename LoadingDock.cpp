@@ -117,20 +117,8 @@ bool LoadingDock::interact()
 
 	} while(userChoice != 'M');
 
-//	 && userChoice != 'Q'); 
 
 	return this->obtainedRoadie;
 
 }
 
- //	if(userChoice == 'Q')
-//		return false;
-//	else 
-//		return true;
-
-//	if(userChoice == 'M') 
-//		nextRoom = move();
-//	else 
-//		nextRoom = NULL;
-
-//	return nextRoom;

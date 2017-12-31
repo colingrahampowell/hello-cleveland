@@ -1,0 +1,5 @@
+ROOM_DESC: a room
+it's a room that is pretty cool
+we like this room
+it's pretty good.
+ROOM_DESC: now the room is even cooler.

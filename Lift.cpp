@@ -17,7 +17,7 @@
 ** Post-Conditions: An instance of the Lift class has been created.
 *******************************************************************************/
 
-Lift::Lift(std::string idIn) : Room(idIn)
+Lift::Lift(std::string idIn, std::string infopath) : Room(idIn, infopath)
 {
 	validChoices.push_back('T');	
 	menuOptions << "T: Take lift down to the stage." << std::endl;

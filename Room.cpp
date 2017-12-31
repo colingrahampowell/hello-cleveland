@@ -1,13 +1,14 @@
 /******************************************************************************
 ** Program Filename: Room.cpp
 ** Author: Colin Powell
-** Date: 8/4/16
 ** Description: Final Project - Room base class implementation file
 ** Input: User selection of menu options relating to specific room actions.
 ** Output: Menu-based interface, output to console.
 *******************************************************************************/
 
 #include "Room.hpp"
+
+const std::string Room::headers[] = { "ROOM_TYPE" };
 
 /***************************
 ** CONSTRUCTOR / DESTRUCTOR
@@ -23,7 +24,7 @@
 ** the occupant pointer.
 *******************************************************************************/
 
-Room::Room(std::string idIn)
+Room::Room(std::string idIn, std::string infopath) : parser( infopath, this->headers )
 {
 	this->roomID = idIn;
 
@@ -58,6 +59,7 @@ Room::Room(std::string idIn)
 	menuOptions << "I: Check inventory." << std::endl;
 	menuOptions << "D: Drop an item, remove it from your inventory." << std::endl;
 	menuOptions << "P: Pick something up, add it to your inventory." << std::endl;
+	
 }
 
 /******************************************************************************
