@@ -1,5 +1,16 @@
-ROOM_DESC: a room
+ROOM_DESC:a room
 it's a room that is pretty cool
 we like this room
 it's pretty good.
-ROOM_DESC: now the room is even cooler.
+ROOM_DESC:now the room is even cooler.
+ROOM_DESC:   the room is too cool; possibly the coolest it has ever been.	
+SPEC_ACT: hi there dudes this is a special action.
+SPEC_ACT:     this is the second special action.		
+
+
+
+
+
+
+
+

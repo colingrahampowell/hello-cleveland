@@ -24,7 +24,7 @@ const std::string Room::headers[] = { "ROOM_TYPE" };
 ** the occupant pointer.
 *******************************************************************************/
 
-Room::Room(std::string idIn, std::string infopath) : parser( infopath, this->headers )
+Room::Room(std::string idIn, std::string infopath) : parser( infopath, this->headers, sizeof(headers)/sizeof(headers[0]) )
 {
 	this->roomID = idIn;
 

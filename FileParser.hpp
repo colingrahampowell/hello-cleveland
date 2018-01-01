@@ -21,10 +21,11 @@ class FileParser
 
 		typedef std::map< std::string, std::vector<std::string> > vecMap;
 		vecMap content;
-		int findNextTarget( std::string& ); 	
+		std::string trim( std::string& );
+		int findNextTarget( const std::string& ); 	
 
 	public:
-		FileParser(std::string&, const std::string[]);
+		FileParser( const std::string&, const std::vector<std::string> );
 //		~FileParser();
 	
 		std::vector<std::string> getTarget( std::string& );
